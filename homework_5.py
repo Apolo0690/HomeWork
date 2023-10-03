@@ -1,4 +1,19 @@
-raw_str = input()
+'''Task_1'''
+'''Виконайте задачу №3 з заняття.
+
+AI. Порграма має відповісти на питання чи є введений стрінг
+1 - номером телефону
+2 - email-ом
+3 - Іменем з ініціалами
+4 - Даними невідомого формату
+
++380631112233 -> Phone
+bcdef@abc.efg -> email   3+ letters @ 3 letters. 3 letters
+Bill J.I. -> name   2 words
+something else -> unknown'''
+
+
+raw_str = input("Enter information: ")
 
 if "+" in raw_str:
 
