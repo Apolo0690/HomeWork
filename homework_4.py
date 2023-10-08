@@ -47,13 +47,13 @@ print(two_vowel_word, "\n",len(two_vowel_word), f"word{plural}that have two vowe
 максимальною ціною.'''
 
 
-# store = { "cito" : 47.999, "BB_studio" : 42.999, "momo" : 49.999,
-#           "main-service" : 37.245, "buy.now" : 38.324, "x-store" : 37.166,
-#           "the_partner" : 38.988, "store" : 37.720, "rozetka" : 38.003}
-#
-# store_1 = float(input("Type the store min: "))
-# store_2 = float(input("Type the store max: "))
-#
-# for key, value in store.items():
-#     if value >= store_1 and value <= store_2:
-#         print(key)
+store = { "cito" : 47.999, "BB_studio" : 42.999, "momo" : 49.999,
+          "main-service" : 37.245, "buy.now" : 38.324, "x-store" : 37.166,
+          "the_partner" : 38.988, "store" : 37.720, "rozetka" : 38.003}
+
+store_1 = float(input("Type the store min: "))
+store_2 = float(input("Type the store max: "))
+
+for key, value in store.items():
+    if value >= store_1 and value <= store_2:
+        print(key)
