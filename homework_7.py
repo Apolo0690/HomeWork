@@ -40,7 +40,7 @@ def get_user_number(prompt='Enter number', lower_limit=None, upper_limit=None):
 
 def get_comp_number(lower_limit, upper_limit):
     res = randint(lower_limit, upper_limit)
-    # print(f'Hint: {res}')
+    print(f'Hint: {res}')
     return res
 
 
@@ -64,7 +64,6 @@ def game_guess_number():
     upper_limit = 9
 
     comp_number = get_comp_number(lower_limit, upper_limit)
-    print(comp_number)
     attempt = 0
     max_attempt = 5
     balance = max_attempt - attempt
