@@ -47,11 +47,11 @@ def get_comp_number(lower_limit, upper_limit):
 
 def compare_numbers(comp_number, user_number):
     difference = abs(comp_number - user_number)
+
     if comp_number == user_number:
         return True
     elif difference < 3:
         print("Hot.")
-        return False
     elif difference < 6:
         print("Heat.")
     elif difference >= 6:
@@ -64,6 +64,7 @@ def game_guess_number():
     upper_limit = 9
 
     comp_number = get_comp_number(lower_limit, upper_limit)
+    print(comp_number)
     attempt = 0
     max_attempt = 5
     balance = max_attempt - attempt
@@ -78,15 +79,10 @@ def game_guess_number():
             compare_numbers(comp_number, user_number)
             attempt += 1
             balance -= 1
-
-
-        if user_number == comp_number:
+            print(f'Try again! You have {balance} chances')
+        else:
             print('Congratulations!')
             break
-        else:
-            print(f'Try again! You have {balance} chances')
-
 
 
 game_guess_number()
-
